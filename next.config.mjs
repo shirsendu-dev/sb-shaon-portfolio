@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  // Contact email credentials stay in server-only environment variables.
   experimental: {
     agentFeedback: true,
   },

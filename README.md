@@ -1,6 +1,6 @@
-# SB Shaon — Professional Portfolio
+# Shirsendu Biswas Shaon — Professional Portfolio
 
-A Next.js App Router portfolio for **SB Shaon, Full Stack Developer & WordPress Expert**. Built with JavaScript, React, Tailwind CSS, React Icons, `next/image`, and `next/link`. Content is separated from presentation so the site can grow without changing its component structure.
+A Next.js App Router portfolio for **Shirsendu Biswas Shaon, Full Stack Developer & WordPress Expert**. Built with JavaScript, React, Tailwind CSS, React Icons, `next/image`, and `next/link`. Content is separated from presentation so the site can grow without changing its component structure. The SB favicon and monogram remain part of the visual identity.
 
 The professional story distinguishes 7+ years of WordPress and web experience from current development in the modern JavaScript stack. No employers, clients, dates, outcomes, or contact details have been invented.
 
@@ -47,13 +47,13 @@ Add another project by copying a data entry and giving it a unique slug. Rebuild
 
 ### Portrait
 
-Place the real professional portrait at **`public/images/profile.jpg`**. Then set `site.portrait.available` to `true` in `src/data/site.js`. The public URL is `/images/profile.jpg`; keep `site.portrait.src` in sync if the filename changes, and write appropriate alt text.
+The supplied professional portrait is configured at **`public/images/profile-photo.jpg`** with `site.portrait.available` set to `true` in `src/data/site.js`. To change the photo, replace that file or update `site.portrait.src`, and keep the alt text accurate.
 
-The initial design uses a visibly labeled portrait placeholder. It does not depict an invented person.
+The hero uses `next/image` to optimize the portrait and keeps the top of the photo visible when cropped. A labeled placeholder is available if `site.portrait.available` is set to `false`.
 
 ### Résumé
 
-Place the actual résumé PDF at **`public/SB-Shaon-Resume.pdf`**. Then set `site.resume.available` to `true`. The public URL is `/SB-Shaon-Resume.pdf`. Until then, the résumé control remains clearly marked as pending rather than linking to a missing file.
+Place the actual résumé PDF at **`public/SB-Shaon-Resume.pdf`**. Then set `site.resume.available` to `true`. The public URL is `/SB-Shaon-Resume.pdf`. Until then, the download control remains inactive and does not link to a missing file.
 
 ### Project screenshots
 
@@ -72,23 +72,45 @@ Add real URLs in `liveUrl` and `githubUrl`; the latter supports the client repos
 
 ## Contact and education
 
-Fill in the named fields under `site.contact`:
+The three contact channels are configured under `site.contact` and used throughout the website:
 
 ```js
-EMAIL
-PHONE
-WHATSAPP
-LINKEDIN_URL
-GITHUB_URL
-FACEBOOK_URL
-X_URL
+EMAIL: "shirsendu.js.dev@gmail.com"
+LINKEDIN_URL: "https://www.linkedin.com/in/shirsendu-biswas/"
+GITHUB_URL: "https://github.com/shirsendu-dev"
 ```
 
-Use full `https://` URLs for social profiles and an international phone number for WhatsApp. The contact component builds email, telephone, and WhatsApp links from these values. Empty values stay inactive and visibly pending.
+The email address uses a `mailto:` link; social profiles use their full `https://` URLs. Update these shared values when contact details change.
 
-The site uses direct contact links. There is no contact form backend and no simulated message submission. If a form is added later, connect it to a real delivery service or server handler, validate input, and show success only after delivery is accepted.
+The contact section also includes a form that submits to `POST /api/contact`. The server sends plain-text email through Resend using native `fetch`, with the recipient taken from `site.contact.EMAIL`. A visitor's address becomes `reply_to`, so replies go to the person who submitted the form.
 
 Education stays hidden until verified entries are added to `site.education` using `{ degree, field, institution, year }`. `site.about.hobbies` is also left empty for real personal interests to be supplied later.
+
+## Configure contact form delivery
+
+The local contact-form submission flow has been verified in the browser and accepted by Resend for `shirsendu.js.dev@gmail.com`. The success message appears, fields clear, and the send button becomes available again. Inbox receipt has not been independently confirmed. Each deployment still needs the two server environment variables below; the form reports errors honestly when delivery is unavailable.
+
+1. Create a Resend API key and verify a sending domain you own. See the official [Next.js sending guide](https://resend.com/docs/send-with-nextjs) and [verified domain guide](https://resend.com/docs/dashboard/domains/introduction).
+2. Copy `.env.example` to `.env.local` in the repository root.
+3. Set `RESEND_API_KEY` to your private API key and `CONTACT_FROM_EMAIL` to an address at your verified sending domain. The sender must not be the visitor's address or your Gmail inbox. Your Gmail address remains the recipient.
+4. Restart the local Next.js server after saving the environment variables. For Vercel, add the same variables to the relevant project environments and redeploy.
+5. Send a real test message from the form, check Resend's delivery status, and confirm that it arrives in your inbox. The website's success response means Resend accepted the message with an email ID; it does not prove inbox delivery.
+
+Keep `.env.local` and API keys out of Git and chat. Only the blank `.env.example` is tracked. Do not prefix these variables with `NEXT_PUBLIC_`, which would expose them to the browser.
+
+For development before a sending domain is verified, Resend permits `CONTACT_FROM_EMAIL="Shirsendu Biswas Shaon <onboarding@resend.dev>"`. This test sender can only send to the exact email registered on the Resend account that issued the API key. To test delivery to `shirsendu.js.dev@gmail.com`, use a key from a Resend account registered to that address. A Gmail inbox is a valid recipient, but cannot be used as the Resend sender. Use a verified domain sender before public launch. See [Resend's testing restriction](https://resend.com/docs/knowledge-base/403-error-resend-dev-domain).
+
+The server checks the request origin, validates all fields, rejects a filled honeypot, and caps request bodies at 40,000 bytes. Names allow 2–100 characters, subjects 3–150, and messages 20–5,000. The recipient and sender are controlled by the server, and identical retries use an idempotency key to avoid duplicate emails.
+
+There is a best-effort limit of five delivery attempts per IP address per ten minutes on each server instance. This memory-based limit is not shared across Vercel instances and resets when an instance restarts. Use hosting-level rate controls for broader production protection.
+
+Run the contact validation and provider-response tests without sending real email:
+
+```bash
+node --experimental-default-type=module --test tests/contact.test.mjs
+```
+
+The tests mock the provider at the test boundary. They do not verify live credentials, domain configuration, or actual inbox delivery.
 
 ## Deploy to Vercel
 
@@ -100,14 +122,15 @@ Deployment has not been performed by this implementation. No hosting account acc
 4. Deploy and inspect the resulting preview. Check the homepage, each case study, mobile navigation, images, résumé, and contact links.
 5. Configure the final domain if desired. Once its real URL is known, set `site.url` to the full production origin, including `https://`, and redeploy. Canonical URLs should only be published after that value is configured; do not use an invented domain.
 
-The implementation does not require an external database, authentication provider, or contact delivery credentials. If those capabilities are added later, configure their secrets through the hosting platform rather than committing them.
+The implementation does not require an external database or authentication provider. Contact form delivery requires the server-only Resend variables described above; configure them through the hosting platform rather than committing them.
 
 Deployment guidance follows the documentation bundled with this installed Next.js version, including `node_modules/next/dist/docs/01-app/01-getting-started/17-deploying.md`.
 
 ## Before public launch
 
-- Supply the real portrait and résumé, then enable their availability flags.
-- Fill in contact and social details and test each configured link.
+- Verify the supplied portrait, and add the real résumé before enabling its availability flag.
+- Verify the configured email, LinkedIn, and GitHub details and test each link.
+- Configure the contact delivery variables, send a real form submission, and confirm receipt in the inbox.
 - Replace illustrative previews with real screenshots and update their placeholder flags.
 - Finish all three case studies, including verified challenges, future plans, live URLs, and repository URLs where appropriate.
 - Replace the professional WordPress project placeholder with a real, shareable project.
@@ -115,7 +138,7 @@ Deployment guidance follows the documentation bundled with this installed Next.j
 - Review homepage and project metadata, favicon, and social share artwork; set the real `site.url` after the domain is known.
 - Run `npm run lint` and `npm run build`, then inspect `npm run start`.
 - Check mobile, tablet, and desktop layouts for horizontal overflow; test the mobile menu and keyboard focus, and inspect the browser console.
-- Verify every project route and an unknown route, all navigation anchors, images, résumé viewing/download, and direct contact actions.
+- Verify every project route and an unknown route, all navigation anchors, images, résumé viewing/download, contact form validation and feedback, and direct contact actions.
 - Deploy, then repeat the key checks on the real hosted URL.
 
 ## Fonts and rendering

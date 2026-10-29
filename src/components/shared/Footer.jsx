@@ -13,7 +13,7 @@ export default async function Footer() {
       <div className="container footer-top">
         <div>
           <Link className="brand" href="/#home">
-            {site.name}<span className="accent">.</span>
+            <span className="brand-name">{site.name}<span className="accent">.</span></span>
           </Link>
           <p>{site.role}</p>
         </div>

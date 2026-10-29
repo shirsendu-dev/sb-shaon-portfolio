@@ -50,7 +50,7 @@ export default function Navbar() {
           <span className="brand-mark" aria-hidden="true">
             s<span>b</span>
           </span>
-          <span>
+          <span className="brand-name">
             {site.name}<span className="accent">.</span>
           </span>
         </Link>
@@ -91,6 +91,13 @@ export default function Navbar() {
               <FiArrowUpRight aria-hidden="true" />
             </Link>
           ))}
+          <Link
+            className="mobile-menu-cta"
+            href="/#contact"
+            onClick={() => setOpen(false)}
+          >
+            Let’s Talk <FiArrowUpRight aria-hidden="true" />
+          </Link>
         </nav>
       </div>
     </header>

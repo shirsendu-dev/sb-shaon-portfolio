@@ -33,11 +33,8 @@ export default function Hero() {
                 </a>
               </div>
             ) : (
-              <span className="resume-pending">
-                <span className="button button-secondary" aria-disabled="true">
-                  Download Resume <FiDownload aria-hidden="true" />
-                </span>
-                <small>Résumé PDF coming soon</small>
+              <span className="button button-secondary" aria-disabled="true">
+                Download Resume <FiDownload aria-hidden="true" />
               </span>
             )}
           </div>
@@ -45,17 +42,20 @@ export default function Hero() {
         </div>
         <div className="hero-art">
           <div className="portrait-frame">
-            <div className="portrait-meta">
-              <span>THE PERSON BEHIND THE PIXELS</span>
-              <span>01 — SB</span>
-            </div>
+            {!site.portrait.available && (
+              <div className="portrait-meta">
+                <span>THE PERSON BEHIND THE PIXELS</span>
+                <span>01 — SB</span>
+              </div>
+            )}
             {site.portrait.available ? (
               <Image
                 className="portrait-image"
                 src={site.portrait.src}
                 alt={site.portrait.alt}
                 fill
-                sizes="(max-width: 767px) 90vw, 40vw"
+                style={{ objectPosition: "center top" }}
+                sizes="(max-width: 600px) 100vw, (max-width: 1312px) 40vw, 501px"
                 preload
               />
             ) : (

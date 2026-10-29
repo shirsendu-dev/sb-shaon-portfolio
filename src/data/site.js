@@ -1,5 +1,5 @@
 export const site = {
-  name: "SB Shaon",
+  name: "Shirsendu Biswas Shaon",
   role: "Full Stack Developer & WordPress Expert",
   description:
     "Full Stack Developer and WordPress Expert with 7+ years of professional web experience, building modern applications, high-performing business websites and scalable digital solutions.",
@@ -28,21 +28,15 @@ export const site = {
     hobbies: null,
   },
   contact: {
-    // TODO: Supply real contact details. Empty values must not become live links.
-    EMAIL: "",
-    PHONE: "",
-    // Use an international number; the UI builds the https://wa.me/ link.
-    WHATSAPP: "",
-    LINKEDIN_URL: "",
-    GITHUB_URL: "",
-    FACEBOOK_URL: "",
-    X_URL: "",
+    EMAIL: "shirsendu.js.dev@gmail.com",
+    LINKEDIN_URL: "https://www.linkedin.com/in/shirsendu-biswas/",
+    GITHUB_URL: "https://github.com/shirsendu-dev",
   },
   portrait: {
-    src: "/images/profile.jpg",
-    alt: "Portrait of SB Shaon",
-    // TODO: Place the real portrait at public/images/profile.jpg, then set true.
-    available: false,
+    src: "/images/profile-photo.jpg",
+    alt: "Portrait of Shirsendu Biswas Shaon",
+    // Replace this image or update the path to change the hero portrait.
+    available: true,
   },
   resume: {
     path: "/SB-Shaon-Resume.pdf",
