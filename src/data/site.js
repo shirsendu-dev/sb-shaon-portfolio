@@ -1,0 +1,71 @@
+export const site = {
+  name: "SB Shaon",
+  role: "Full Stack Developer & WordPress Expert",
+  description:
+    "Full Stack Developer and WordPress Expert with 7+ years of professional web experience, building modern applications, high-performing business websites and scalable digital solutions.",
+  // TODO: Add the public production origin, including https://, after deployment.
+  url: "",
+  hero: {
+    eyebrow: "Full Stack Developer · WordPress Expert",
+    title: "Web experiences.",
+    accent: "Built for real business.",
+    description:
+      "I combine 7+ years of professional WordPress and web experience with modern React, Next.js, and full-stack development. Thoughtful interfaces. Reliable websites. Useful digital products.",
+  },
+  about: {
+    intro: "An established web career. An expanding perspective.",
+    paragraphs: [
+      "I started in web design and WordPress development. Over more than seven years, I have built and maintained business websites, working across responsive design, ecommerce, performance, accessibility, hosting, and the practical details that keep a website running.",
+      "Approximately five of those years were spent working remotely with a U.S.-based digital marketing agency. Contributing to production websites and ongoing client work taught me to connect technical decisions with usability, business goals, and the people relying on the site every day.",
+      "Wanting deeper control over the applications I build led me into JavaScript, React, Next.js, Node.js, Express, and MongoDB. Today, I am bringing that modern development skill set together with the judgment that comes from years of real website work.",
+    ],
+    principles: [
+      "Business context before technical decisions",
+      "Thoughtful design and dependable implementation",
+      "Care for the website beyond launch day",
+    ],
+    // TODO: Add verified personal interests or hobbies when ready.
+    hobbies: null,
+  },
+  contact: {
+    // TODO: Supply real contact details. Empty values must not become live links.
+    EMAIL: "",
+    PHONE: "",
+    // Use an international number; the UI builds the https://wa.me/ link.
+    WHATSAPP: "",
+    LINKEDIN_URL: "",
+    GITHUB_URL: "",
+    FACEBOOK_URL: "",
+    X_URL: "",
+  },
+  portrait: {
+    src: "/images/profile.jpg",
+    alt: "Portrait of SB Shaon",
+    // TODO: Place the real portrait at public/images/profile.jpg, then set true.
+    available: false,
+  },
+  resume: {
+    path: "/SB-Shaon-Resume.pdf",
+    // TODO: Place the real PDF at public/SB-Shaon-Resume.pdf, then set true.
+    available: false,
+  },
+  // TODO: Add verified entries using { degree, field, institution, year }.
+  // The education section stays hidden while this array is empty.
+  education: [],
+};
+
+export const navigation = [
+  { label: "Home", href: "/#home" },
+  { label: "About", href: "/#about" },
+  { label: "Expertise", href: "/#expertise" },
+  { label: "Experience", href: "/#experience" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Contact", href: "/#contact" },
+];
+
+export const stats = [
+  { value: "7+", label: "Years of professional web experience" },
+  { value: "~5", label: "Years with a remote U.S. agency" },
+  { value: "End to end", label: "WordPress expertise" },
+  { value: "Modern stack", label: "React · Next.js · MERN" },
+];
