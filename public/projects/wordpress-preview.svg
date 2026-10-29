@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" fill="none">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="780" gradientUnits="userSpaceOnUse"><stop stop-color="#B7B0A3"/><stop offset="1" stop-color="#8B9384"/></linearGradient>
+    <linearGradient id="stone" x1="695" y1="220" x2="1040" y2="580" gradientUnits="userSpaceOnUse"><stop stop-color="#DAD1BF"/><stop offset="1" stop-color="#AEA58F"/></linearGradient>
+    <linearGradient id="arch" x1="730" y1="285" x2="975" y2="558" gradientUnits="userSpaceOnUse"><stop stop-color="#7D8A70"/><stop offset="1" stop-color="#3E5142"/></linearGradient>
+    <linearGradient id="floor" x1="730" y1="530" x2="1050" y2="610" gradientUnits="userSpaceOnUse"><stop stop-color="#ADA991"/><stop offset="1" stop-color="#D3C9B6"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#333D30" flood-opacity=".25"/></filter>
+    <clipPath id="visual"><rect x="666" y="202" width="425" height="365" rx="2"/></clipPath>
+  </defs>
+  <rect width="1200" height="780" fill="url(#background)"/>
+  <path d="M0 160H1200M0 620H1200" stroke="#E0D8C8" stroke-opacity=".2"/>
+  <g filter="url(#shadow)">
+    <rect x="74" y="68" width="1052" height="620" rx="14" fill="#F4F0E6"/>
+    <path d="M88 68H1112C1119.73 68 1126 74.27 1126 82V108H74V82C74 74.27 80.27 68 88 68Z" fill="#E7E1D5"/>
+    <g fill="#B8B2A2"><circle cx="96" cy="88" r="4"/><circle cx="111" cy="88" r="4"/><circle cx="126" cy="88" r="4"/></g>
+    <rect x="450" y="79" width="300" height="18" rx="5" fill="#DAD5C8"/>
+    <text x="600" y="92" fill="#777A68" font-family="Arial,sans-serif" font-size="10" text-anchor="middle" letter-spacing="1.5">WORDPRESS / BUSINESS WEBSITE</text>
+    <path d="M112 135H133V161H112V135Z" stroke="#435341" stroke-width="1.4"/><path d="M118 161V144C118 137 127 137 127 144V161" stroke="#435341" stroke-width="1.4"/>
+    <text x="146" y="147" fill="#3D4B3A" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2">BUSINESS</text><text x="146" y="162" fill="#7E826F" font-family="Arial,sans-serif" font-size="8" letter-spacing="3.2">WEBSITE</text>
+    <g fill="#68715D" font-family="Arial,sans-serif" font-size="11"><text x="726" y="153">About</text><text x="802" y="153">Services</text><text x="893" y="153">Contact</text></g>
+    <rect x="982" y="132" width="107" height="31" rx="2" stroke="#727C65"/><text x="999" y="152" fill="#49563E" font-family="Arial,sans-serif" font-size="10">Get in touch</text><path d="M1067 143H1074V150M1074 143L1067 150" stroke="#49563E" stroke-width="1.1"/>
+    <path d="M111 182H1089" stroke="#DAD6C9"/>
+    <text x="112" y="251" fill="#7A836C" font-family="Arial,sans-serif" font-size="10" letter-spacing="2.5">DESIGNED WITH PURPOSE</text>
+    <text x="108" y="318" fill="#394B3B" font-family="Georgia,serif" font-size="56" letter-spacing="-2">A considered</text>
+    <text x="108" y="378" fill="#394B3B" font-family="Georgia,serif" font-size="56" letter-spacing="-2">online presence.</text>
+    <text x="113" y="424" fill="#7B806E" font-family="Arial,sans-serif" font-size="12">A professional website, shaped around</text>
+    <text x="113" y="445" fill="#7B806E" font-family="Arial,sans-serif" font-size="12">the business behind it.</text>
+    <rect x="112" y="478" width="163" height="41" rx="2" fill="#43573F"/>
+    <text x="130" y="504" fill="#ECEEDF" font-family="Arial,sans-serif" font-size="11">Explore the website</text><path d="M250 492H258V500M258 492L250 500" stroke="#D8DFCA" stroke-width="1.3"/>
+    <g clip-path="url(#visual)">
+      <rect x="666" y="202" width="425" height="365" fill="url(#stone)"/>
+      <path d="M730 567V347C730 196 983 196 983 347V567H730Z" fill="#9F9E83"/>
+      <path d="M751 567V350C751 222 962 222 962 350V567H751Z" fill="url(#arch)"/>
+      <path d="M780 567V369C780 270 945 270 945 369V567H780Z" fill="#455B48"/>
+      <path d="M798 567V372C798 293 927 293 927 372V567H798Z" fill="#314C3B"/>
+      <path d="M879 567V352C879 318 927 334 927 372V567H879Z" fill="#496347"/>
+      <path d="M666 532L1091 500V567H666V532Z" fill="url(#floor)"/>
+      <path d="M751 202H835L714 567H666V460L751 202Z" fill="#F8EED6" fill-opacity=".18"/>
+      <path d="M983 202H1006V567H983V202Z" fill="#E7DBC5" fill-opacity=".25"/>
+      <path d="M666 555L1091 523M839 519L917 567" stroke="#8B9477" stroke-opacity=".35"/>
+      <ellipse cx="1012" cy="537" rx="39" ry="7" fill="#7C8868" fill-opacity=".3"/>
+      <path d="M1011 512C965 477 980 433 1004 422C1023 453 1026 484 1011 512Z" fill="#526B45"/>
+      <path d="M1014 508C1010 460 1042 424 1067 429C1068 469 1043 496 1014 508Z" fill="#607A4C"/>
+      <path d="M1013 509C974 498 952 469 957 447C993 444 1016 474 1013 509Z" fill="#7C8C5C"/>
+      <path d="M1012 508L1003 446M1012 509L1052 447M1011 509L972 462" stroke="#425C39" stroke-width="2"/>
+      <path d="M990 508H1035L1028 545H996L990 508Z" fill="#C2A784"/>
+      <path d="M996 512H1028L1024 539H1000L996 512Z" fill="#B19A77"/>
+    </g>
+    <path d="M112 592H1089" stroke="#D7D3C4"/>
+    <g fill="#7B826E" font-family="Arial,sans-serif" font-size="9" letter-spacing="1.8"><text x="112" y="624">A REAL BUSINESS.</text><text x="450" y="624">A CLEAR PURPOSE.</text><text x="789" y="624">A THOUGHTFUL EXPERIENCE.</text></g>
+    <g fill="#43563E" font-family="Georgia,serif" font-size="17"><text x="112" y="651">Design &amp; development</text><text x="450" y="651">Responsive by design</text><text x="789" y="651">Built to be maintained</text></g>
+  </g>
+  <text x="600" y="742" fill="#384936" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" letter-spacing="2">ILLUSTRATIVE PREVIEW · SCREENSHOT PENDING</text>
+</svg>

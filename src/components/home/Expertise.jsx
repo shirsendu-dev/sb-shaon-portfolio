@@ -1,12 +1,12 @@
-import { FiAccessibility, FiLayers, FiLayout, FiServer, FiShoppingBag, FiZap } from "react-icons/fi";
+import { FiEye, FiLayers, FiLayout, FiServer, FiShoppingBag, FiZap } from "react-icons/fi";
 import { expertise } from "@/data/skills";
 
 const icons = {
   wordpress: FiLayout,
-  fullstack: FiLayers,
+  layers: FiLayers,
   performance: FiZap,
-  ecommerce: FiShoppingBag,
-  accessibility: FiAccessibility,
+  commerce: FiShoppingBag,
+  accessibility: FiEye,
   architecture: FiServer,
 };
 
@@ -17,7 +17,7 @@ export default function Expertise() {
         <div className="section-heading section-heading-split">
           <div>
             <p className="eyebrow">02 / CORE EXPERTISE</p>
-            <h2 id="expertise-title" className="section-title">The whole website.<br />Not just the surface.</h2>
+            <h2 id="expertise-title" className="section-title">From first impression.<br />To lasting performance.</h2>
           </div>
           <p className="section-intro">From a first impression to the systems behind it, I bring a practical understanding of what makes a website work.</p>
         </div>

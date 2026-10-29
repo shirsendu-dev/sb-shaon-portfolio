@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" fill="none">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="780" gradientUnits="userSpaceOnUse"><stop stop-color="#DED7C8"/><stop offset="1" stop-color="#C4C5AF"/></linearGradient>
+    <linearGradient id="hero" x1="570" y1="200" x2="1090" y2="510" gradientUnits="userSpaceOnUse"><stop stop-color="#D0D2B9"/><stop offset="1" stop-color="#BDC3A0"/></linearGradient>
+    <linearGradient id="bag" x1="795" y1="235" x2="980" y2="430" gradientUnits="userSpaceOnUse"><stop stop-color="#C2825D"/><stop offset="1" stop-color="#9C5B3E"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#4B4E37" flood-opacity=".22"/></filter>
+    <filter id="objectShadow" x="-50%" y="-50%" width="200%" height="220%"><feDropShadow dx="8" dy="15" stdDeviation="13" flood-color="#5B6343" flood-opacity=".2"/></filter>
+  </defs>
+  <rect width="1200" height="780" fill="url(#background)"/>
+  <path d="M0 680L1200 80M0 760L1200 160" stroke="#F6F0E3" stroke-opacity=".3"/>
+  <g filter="url(#shadow)">
+    <rect x="73" y="68" width="1054" height="620" rx="14" fill="#F8F5ED"/>
+    <path d="M87 68H1113C1120.73 68 1127 74.27 1127 82V108H73V82C73 74.27 79.27 68 87 68Z" fill="#EEEAE0"/>
+    <g fill="#BCB9A9"><circle cx="96" cy="88" r="4"/><circle cx="111" cy="88" r="4"/><circle cx="126" cy="88" r="4"/></g>
+    <rect x="450" y="79" width="300" height="18" rx="5" fill="#E2DED2"/>
+    <text x="600" y="92" fill="#7B7D67" font-family="Arial,sans-serif" font-size="10" text-anchor="middle" letter-spacing="1.5">BAZARDOR / WEB APPLICATION</text>
+    <text x="111" y="159" fill="#333D2B" font-family="Arial,sans-serif" font-size="27" font-weight="700" letter-spacing="-1.3">bazar<tspan fill="#AD6E4F">dor</tspan><tspan fill="#333D2B">.</tspan></text>
+    <g fill="#6C715E" font-family="Arial,sans-serif" font-size="12"><text x="490" y="153">Products</text><text x="591" y="153">Categories</text></g>
+    <path d="M1040 142C1040 138 1043 135 1047 135C1051 135 1054 138 1054 142C1054 146 1051 149 1047 149C1043 149 1040 146 1040 142ZM1037 164C1037 151 1057 151 1057 164" stroke="#455039" stroke-width="1.6"/>
+    <text x="1070" y="153" fill="#455039" font-family="Arial,sans-serif" font-size="11">Sign in</text>
+    <path d="M110 182H1090" stroke="#E2DFD3"/>
+    <rect x="110" y="207" width="980" height="290" rx="9" fill="url(#hero)"/>
+    <text x="148" y="251" fill="#5D6949" font-family="Arial,sans-serif" font-size="10" letter-spacing="2.6">A PLACE TO EXPLORE</text>
+    <text x="145" y="307" fill="#34402C" font-family="Arial,sans-serif" font-size="43" font-weight="600" letter-spacing="-1.9">Everyday finds.</text>
+    <text x="145" y="357" fill="#34402C" font-family="Arial,sans-serif" font-size="43" font-weight="600" letter-spacing="-1.9">Thoughtfully simple.</text>
+    <text x="148" y="390" fill="#616C51" font-family="Arial,sans-serif" font-size="13">Discover the product categories.</text>
+    <rect x="147" y="422" width="168" height="39" rx="4" fill="#3E4B31"/>
+    <text x="165" y="447" fill="#F1F0E6" font-family="Arial,sans-serif" font-size="11" font-weight="600">Explore products</text><path d="M289 435L296 442L289 449M280 442H295" stroke="#E1E7CC" stroke-width="1.6"/>
+    <ellipse cx="882" cy="451" rx="149" ry="17" fill="#8C9773" fill-opacity=".23"/>
+    <g filter="url(#objectShadow)">
+      <path d="M797 299L958 283L975 437L787 437L797 299Z" fill="url(#bag)"/>
+      <path d="M825 309L827 274C827 211 916 207 923 269L929 301" stroke="#965838" stroke-width="12"/>
+      <path d="M825 306L827 274C827 215 913 211 920 269L926 301" stroke="#D29C71" stroke-width="5"/>
+      <path d="M797 299L815 318L807 437H787L797 299Z" fill="#955B41"/>
+      <path d="M953 284L940 311L957 437H975L953 284Z" fill="#A36648"/>
+      <path d="M818 322L936 310L950 424H810L818 322Z" stroke="#E1B28B" stroke-opacity=".35"/>
+      <path d="M845 348L895 343" stroke="#E1B28B" stroke-width="2" stroke-opacity=".45"/>
+      <rect x="725" y="365" width="70" height="74" rx="22" fill="#E9E5D3"/>
+      <path d="M785 381H799C818 381 818 416 797 416H790" stroke="#E9E5D3" stroke-width="10"/>
+      <ellipse cx="760" cy="365" rx="35" ry="9" fill="#DBD8C4"/>
+      <ellipse cx="760" cy="365" rx="27" ry="5" fill="#B9B99D"/>
+      <path d="M1010 428C982 386 1009 340 1038 332C1045 372 1031 407 1010 428Z" fill="#728052"/>
+      <path d="M1010 429C1001 397 975 386 960 392C962 419 988 436 1010 429Z" fill="#889361"/>
+      <path d="M1010 427L1027 357" stroke="#586A3E" stroke-width="2"/>
+      <path d="M982 434H1041L1034 467H990L982 434Z" fill="#B0805B"/>
+    </g>
+    <text x="110" y="544" fill="#34402C" font-family="Arial,sans-serif" font-size="19" font-weight="600" letter-spacing="-.5">Explore the categories</text>
+    <text x="986" y="541" fill="#7C846D" font-family="Arial,sans-serif" font-size="10">BROWSE ALL</text><path d="M1074 533L1080 539L1074 545M1065 539H1079" stroke="#727E60" stroke-width="1.4"/>
+    <rect x="110" y="566" width="310" height="91" rx="7" fill="#E8E4D7"/>
+    <rect x="444" y="566" width="311" height="91" rx="7" fill="#E3E5D7"/>
+    <rect x="779" y="566" width="311" height="91" rx="7" fill="#EADFD2"/>
+    <g fill="#657052" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5"><text x="130" y="599">CATEGORY 01</text><text x="464" y="599">CATEGORY 02</text><text x="799" y="599">CATEGORY 03</text></g>
+    <g stroke="#8A9078" stroke-width="1.3"><path d="M130 625H193M464 625H527M799 625H862"/><path d="M199 621L203 625L199 629M533 621L537 625L533 629M868 621L872 625L868 629"/></g>
+    <path d="M347 596H380L384 644H341L347 596Z" fill="#B99475"/><path d="M352 598V589C352 575 374 575 374 589V598" stroke="#9B7655" stroke-width="4"/>
+    <path d="M681 603C681 591 719 591 719 603V633C719 649 681 649 681 633V603Z" fill="#A1AD89"/><ellipse cx="700" cy="602" rx="19" ry="5" fill="#859671"/>
+    <rect x="1006" y="599" width="47" height="39" rx="4" fill="#C29B78"/><path d="M1006 610H1053M1029 599V638" stroke="#E2C2A2" stroke-width="2"/>
+  </g>
+  <text x="600" y="742" fill="#596149" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" letter-spacing="2">ILLUSTRATIVE PREVIEW · SCREENSHOT PENDING</text>
+</svg>

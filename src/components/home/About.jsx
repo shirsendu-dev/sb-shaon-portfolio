@@ -13,7 +13,7 @@ export default function About() {
             Always moving forward.
           </h2>
           <div className="about-signature" aria-hidden="true">
-            <span>SB Shaon</span>
+            <span>{site.name}</span>
             <FiArrowUpRight />
           </div>
         </div>

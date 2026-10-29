@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" fill="none">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="780" gradientUnits="userSpaceOnUse"><stop stop-color="#28302A"/><stop offset="1" stop-color="#171B18"/></linearGradient>
+    <linearGradient id="screen" x1="200" y1="100" x2="1000" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#202520"/><stop offset="1" stop-color="#151A16"/></linearGradient>
+    <linearGradient id="tile" x1="430" y1="340" x2="610" y2="530" gradientUnits="userSpaceOnUse"><stop stop-color="#354033"/><stop offset="1" stop-color="#252E25"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#080D09" flood-opacity=".5"/></filter>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" stroke="#CAD9C2" stroke-opacity=".04"/></pattern>
+  </defs>
+  <rect width="1200" height="780" fill="url(#background)"/>
+  <rect width="1200" height="780" fill="url(#grid)"/>
+  <circle cx="1115" cy="50" r="260" stroke="#B8DA82" stroke-opacity=".08"/>
+  <circle cx="1115" cy="50" r="205" stroke="#B8DA82" stroke-opacity=".06"/>
+  <g filter="url(#shadow)">
+    <rect x="74" y="68" width="1052" height="620" rx="14" fill="url(#screen)" stroke="#4A5547"/>
+    <path d="M88 68H1112C1119.73 68 1126 74.27 1126 82V108H74V82C74 74.27 80.27 68 88 68Z" fill="#2B322B"/>
+    <circle cx="96" cy="88" r="4" fill="#64705F"/><circle cx="111" cy="88" r="4" fill="#64705F"/><circle cx="126" cy="88" r="4" fill="#64705F"/>
+    <rect x="450" y="79" width="300" height="18" rx="5" fill="#20261F"/>
+    <text x="600" y="92" fill="#99A591" font-family="Arial,sans-serif" font-size="10" text-anchor="middle" letter-spacing="1.5">FITLOG / WORKOUT LIBRARY</text>
+    <path d="M282 108V688" stroke="#353D32"/>
+    <text x="104" y="164" fill="#EEF1E7" font-family="Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="-1.5">fitlog<tspan fill="#C6EB8C">.</tspan></text>
+    <text x="105" y="208" fill="#7F8E78" font-family="Arial,sans-serif" font-size="10" letter-spacing="2">YOUR SPACE TO MOVE</text>
+    <rect x="91" y="251" width="174" height="44" rx="7" fill="#C6EB8C"/>
+    <g stroke="#263222" stroke-width="1.7"><rect x="107" y="267" width="6" height="6" rx="1"/><rect x="118" y="267" width="6" height="6" rx="1"/><rect x="107" y="278" width="6" height="6" rx="1"/><rect x="118" y="278" width="6" height="6" rx="1"/></g>
+    <text x="137" y="278" fill="#263222" font-family="Arial,sans-serif" font-size="13" font-weight="700">Workout library</text>
+    <path d="M110 322H122V338L116 334L110 338V322Z" stroke="#98A38D" stroke-width="1.6"/>
+    <text x="137" y="334" fill="#A6B09B" font-family="Arial,sans-serif" font-size="13">Saved workouts</text>
+    <g stroke="#98A38D" stroke-width="1.6"><rect x="108" y="371" width="16" height="16" rx="3"/><path d="M112 377H120M112 381H118"/></g>
+    <text x="137" y="384" fill="#A6B09B" font-family="Arial,sans-serif" font-size="13">My workout plan</text>
+    <path d="M104 616H252" stroke="#384132"/>
+    <circle cx="119" cy="650" r="15" fill="#343F2F"/>
+    <path d="M115 650L118 653L124 646" stroke="#C6EB8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="145" y="648" fill="#B7C0AC" font-family="Arial,sans-serif" font-size="11">Your plan,</text>
+    <text x="145" y="663" fill="#7D8C73" font-family="Arial,sans-serif" font-size="11">always with you.</text>
+    <text x="321" y="162" fill="#9AA98E" font-family="Arial,sans-serif" font-size="10" letter-spacing="2">FIND YOUR NEXT WORKOUT</text>
+    <text x="320" y="218" fill="#F0F1E8" font-family="Arial,sans-serif" font-size="41" font-weight="600" letter-spacing="-1.8">A little stronger.</text>
+    <text x="320" y="261" fill="#C6EB8C" font-family="Arial,sans-serif" font-size="41" font-weight="600" letter-spacing="-1.8">Every day.</text>
+    <text x="322" y="298" fill="#9AA591" font-family="Arial,sans-serif" font-size="13">Explore workouts. Build a plan that works for you.</text>
+    <text x="322" y="352" fill="#E6EBDD" font-family="Arial,sans-serif" font-size="17" font-weight="600">Workout library</text>
+    <rect x="948" y="330" width="137" height="31" rx="6" fill="#252D23" stroke="#414C3B"/>
+    <text x="963" y="350" fill="#BEC7B4" font-family="Arial,sans-serif" font-size="11">Sort workouts</text><path d="M1066 343L1070 347L1074 343" stroke="#A6B49A" stroke-width="1.5"/>
+    <rect x="322" y="381" width="240" height="198" rx="10" fill="url(#tile)"/>
+    <rect x="581" y="381" width="240" height="198" rx="10" fill="#30392C"/>
+    <rect x="840" y="381" width="245" height="198" rx="10" fill="#2A3428"/>
+    <circle cx="442" cy="480" r="69" stroke="#B7D291" stroke-opacity=".1"/>
+    <circle cx="701" cy="480" r="69" stroke="#B7D291" stroke-opacity=".1"/>
+    <circle cx="962" cy="480" r="69" stroke="#B7D291" stroke-opacity=".1"/>
+    <g transform="translate(442 480) rotate(-30)" stroke="#CADDAF" stroke-width="8" stroke-linecap="round"><path d="M-40 0H40"/><path d="M-40 -26V26M40 -26V26" stroke-width="12"/><path d="M-54 -17V17M54 -17V17" stroke-width="9"/></g>
+    <g stroke="#B7CAA0" stroke-width="6" stroke-linecap="round"><path d="M680 451V440C680 414 722 414 722 440V451"/><path d="M670 479C670 457 684 449 701 449C718 449 732 457 732 479V504C732 518 721 525 701 525C681 525 670 518 670 504V479Z"/><path d="M689 497H713" stroke-width="3"/></g>
+    <g stroke="#CADDAF" stroke-width="5" stroke-linecap="round"><path d="M918 510C918 459 1008 459 1008 510M921 510V525M1005 510V525"/><path d="M941 480C941 452 983 452 983 480"/><path d="M949 456V446M975 456V446" stroke-width="4"/></g>
+    <g font-family="Arial,sans-serif" font-size="10" fill="#A5B59A"><text x="339" y="404">WORKOUT 01</text><text x="598" y="404">WORKOUT 02</text><text x="857" y="404">WORKOUT 03</text></g>
+    <g fill="#293423" stroke="#B5CA9F" stroke-width="1.4"><rect x="524" y="393" width="22" height="26" rx="5"/><path d="M532 400H538V411L535 409L532 411V400Z"/><rect x="783" y="393" width="22" height="26" rx="5"/><path d="M791 400H797V411L794 409L791 411V400Z"/><rect x="1047" y="393" width="22" height="26" rx="5"/><path d="M1055 400H1061V411L1058 409L1055 411V400Z"/></g>
+    <g fill="#DFE6D7" font-family="Arial,sans-serif" font-size="15" font-weight="600"><text x="323" y="607">Explore this workout</text><text x="582" y="607">Explore this workout</text><text x="841" y="607">Explore this workout</text></g>
+    <g stroke="#839176" stroke-width="1.5"><path d="M538 596H548V606M548 596L538 606"/><path d="M797 596H807V606M807 596L797 606"/><path d="M1061 596H1071V606M1071 596L1061 606"/></g>
+    <path d="M322 636H1085" stroke="#343F2E"/>
+    <text x="322" y="661" fill="#7E8C75" font-family="Arial,sans-serif" font-size="10" letter-spacing="1">DISCOVER. SAVE. MOVE.</text>
+  </g>
+  <text x="600" y="742" fill="#9FAF92" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" letter-spacing="2">ILLUSTRATIVE PREVIEW · SCREENSHOT PENDING</text>
+</svg>
