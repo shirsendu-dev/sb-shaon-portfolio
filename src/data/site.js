@@ -7,10 +7,10 @@ export const site = {
   url: "",
   hero: {
     eyebrow: "Full Stack Developer · WordPress Expert",
-    title: "Web experiences.",
-    accent: "Built for real business.",
+    title: "The developer who",
+    accent: "understands your business",
     description:
-      "I combine 7+ years of professional WordPress and web experience with modern React, Next.js, and full-stack development. Thoughtful interfaces. Reliable websites. Useful digital products.",
+      "Most full-stack developers learn business context on the job. I spent 7+ years and 300+ projects learning it first — now I build with React, Next.js, Node.js, and MongoDB.",
   },
   about: {
     intro: "An established web career. An expanding perspective.",
