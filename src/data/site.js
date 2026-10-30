@@ -10,7 +10,7 @@ export const site = {
     title: "The Developer Who",
     accent: "Understands Your Business",
     description:
-      "I turn business problems into working products — WordPress websites that convert, full-stack web applications that scale.",
+      "I turn business problems into working products — websites that convert, full-stack web applications that scale.",
   },
   about: {
     intro: "An established web career. An expanding perspective.",
