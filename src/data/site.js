@@ -3,7 +3,7 @@ export const site = {
   role: "Full Stack Developer & WordPress Expert",
   description:
     "Full Stack Developer and WordPress Expert with 7+ years of professional web experience, building modern applications, high-performing business websites and scalable digital solutions.",
-  // TODO: Add the public production origin, including https://, after deployment.
+  // Optional production origin. SITE_URL or Vercel's system URL can supply it instead.
   url: "",
   hero: {
     eyebrow: "Full Stack Developer · WordPress Expert",
@@ -39,9 +39,8 @@ export const site = {
     available: true,
   },
   resume: {
-    path: "/SB-Shaon-Resume.pdf",
-    // TODO: Place the real PDF at public/SB-Shaon-Resume.pdf, then set true.
-    available: false,
+    path: "/shirsendu-biswas-resume.pdf",
+    available: true,
   },
   // TODO: Add verified entries using { degree, field, institution, year }.
   // The education section stays hidden while this array is empty.

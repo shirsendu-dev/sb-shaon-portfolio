@@ -24,14 +24,9 @@ export default function Hero() {
               View My Work <FiArrowUpRight aria-hidden="true" />
             </Link>
             {site.resume.available ? (
-              <div className="resume-pending">
-                <a className="button button-secondary" href={site.resume.path} download>
-                  Download Resume <FiDownload aria-hidden="true" />
-                </a>
-                <a className="resume-view" href={site.resume.path} target="_blank" rel="noopener noreferrer">
-                  View résumé <FiArrowUpRight aria-hidden="true" />
-                </a>
-              </div>
+              <a className="button button-secondary" href={site.resume.path} target="_blank" rel="noopener noreferrer">
+                Download Resume <FiDownload aria-hidden="true" />
+              </a>
             ) : (
               <span className="button button-secondary" aria-disabled="true">
                 Download Resume <FiDownload aria-hidden="true" />

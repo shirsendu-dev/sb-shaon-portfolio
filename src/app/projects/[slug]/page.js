@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import ProjectDetails from "@/components/projects/ProjectDetails";
 import { projects, getProjectBySlug } from "@/data/projects";
 import { site } from "@/data/site";
+import { getSiteOrigin } from "@/lib/site-origin";
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -14,8 +15,9 @@ export async function generateMetadata({ params }, parent) {
   if (!project) return { title: "Project not found", robots: { index: false } };
 
   const parentMetadata = await parent;
-  const projectUrl = site.url ? `${site.url.replace(/\/$/, "")}/projects/${project.slug}` : null;
-  const screenshotUrl = site.url ? new URL(project.heroImage.src, site.url).toString() : null;
+  const siteOrigin = getSiteOrigin(site.url);
+  const projectUrl = siteOrigin ? `${siteOrigin}/projects/${project.slug}` : null;
+  const screenshotUrl = siteOrigin ? new URL(project.heroImage.src, siteOrigin).toString() : null;
 
   return {
     title: project.title,
