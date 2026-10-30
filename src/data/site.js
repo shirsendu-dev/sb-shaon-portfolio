@@ -7,8 +7,8 @@ export const site = {
   url: "",
   hero: {
     eyebrow: "Full Stack Developer · WordPress Expert",
-    title: "The developer who",
-    accent: "understands your business",
+    title: "The Developer Who",
+    accent: "Understands Your Business",
     description:
       "Most full-stack developers learn business context on the job. I spent 7+ years and 300+ projects learning it first — now I build with React, Next.js, Node.js, and MongoDB.",
   },
