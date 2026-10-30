@@ -37,11 +37,33 @@ Homepage sections are in `src/components/home/`, shared navigation and footer in
 
 Project detail pages are generated from the project data at `/projects/[slug]`:
 
+- `/projects/cuba-tobacco-cigar-co`
 - `/projects/fitlog`
-- `/projects/bazardor`
-- `/projects/wordpress-business-website`
+- `/projects/book-vibe`
 
 Add another project by copying a data entry and giving it a unique slug. Rebuild after adding or changing project routes.
+
+The homepage presents Cuba Tobacco Cigar Co. first, followed by FitLog and Book Vibe. The professional business website and the two application projects share the portfolio's visual system while using case-study copy appropriate to their context.
+
+| Project fields | Purpose |
+| --- | --- |
+| `slug`, `title`, `shortTitle`, `projectType` | Route, full case-study title, compact card title, and project context |
+| `year`, `dateLabel`, `role`, `client` | Verified project metadata; unknown values remain empty |
+| `heroImage` | Main image object: `{ src, alt, width, height }` |
+| `gallery` | Supporting screenshot objects with accurate descriptions and dimensions |
+| `shortDescription`, `overview`, `objective`, `approach` | Preview copy and the case-study narrative |
+| `keyFeatures`, `techStack` | Confirmed functionality and technologies |
+| `challenges` | Entries shaped as `{ title, description, solution }`, grounded in inspected implementation or visible site structure |
+| `whatILearned`, `futureImprovements`, `outcome` | Verified lessons, actual planned improvements, and supported qualitative outcomes |
+| `liveUrl`, `githubUrl` | Public project links; GitHub buttons stay hidden when the repository URL is empty |
+| `featured`, `tone`, `sectionTitles` | Featured presentation, business/application emphasis, and optional section wording |
+| `todos`, `sources` | Editable missing-information notes and evidence references |
+
+Current live project links:
+
+- [Cuba Tobacco Cigar Co.](https://www.cubatobaccocigarco.com/)
+- [FitLog](https://fit-log-next-js-app-mu.vercel.app/)
+- [Book Vibe](https://book-vibe-next-js-app-pied.vercel.app/)
 
 ## Supply the missing assets
 
@@ -57,18 +79,37 @@ Place the actual résumé PDF at **`public/SB-Shaon-Resume.pdf`**. Then set `sit
 
 ### Project screenshots
 
-The supplied preview artwork is **illustrative, not a screenshot or evidence of a completed interface**. For each real project:
+The project system uses the nine real JPG assets supplied in these existing folders:
 
-1. Add an optimized screenshot to `public/projects/`.
-2. Update `screenshot` in its project entry to the public path, such as `/projects/your-project.webp`.
-3. Replace `screenshotAlt` with an accurate description.
-4. Set `screenshotIsPlaceholder` to `false` only after the image is replaced.
+```text
+public/projects/cigar/
+  cover.jpg
+  screenshot-1.jpg
+  screenshot-2.jpg
 
-Replace the WordPress project placeholder with a verified professional project, and set its `isPlaceholder` to `false` when its content is ready. Supply client/company information only if it may be shared publicly.
+public/projects/fitlog/
+  cover.jpg
+  screenshot-1.jpg
+  screenshot-2.jpg
 
-For every case study, verify the description, technologies, features, role, responsibilities, objective, solution, challenges and resolutions, lessons, future improvements, and outcome. Missing details deliberately remain empty or visibly marked as pending. BazarDor's supplied concepts need checking against the completed application. Use actual outcomes rather than invented metrics.
+public/projects/bookvibe/
+  cover.jpg
+  screenshot-1.jpg
+  screenshot-2.jpg
+```
 
-Add real URLs in `liveUrl` and `githubUrl`; the latter supports the client repository required by the assignment. Empty URL fields do not create live links.
+The main image is configured in `heroImage`; supporting images belong in `gallery`. Public paths begin with `/projects/`, not `/public/projects/`. Keep each image's `alt`, `width`, and `height` accurate when replacing a file. The original screenshot files remain in place rather than being renamed solely to match the public route slugs.
+
+No core project images are missing. Optional additions would give the case studies more depth: Cuba Tobacco Cigar Co.'s Legacy page and a mobile view, Book Vibe's Pages to Read screen, and FitLog's saved-workouts screen. Add those files and gallery entries only when real screenshots are available; do not generate replacement interfaces.
+
+Remaining project information is kept in editable `todos` instead of being invented:
+
+- Confirm Cuba Tobacco Cigar Co.'s exact role, project year, and personal responsibilities.
+- Confirm WooCommerce or any other implementation tools before adding them to the business website's stack. WordPress is confirmed; a working shop alone does not establish a specific ecommerce technology.
+- Supply the FitLog and Book Vibe repository URLs if they may be shared. GitHub URLs remain empty until confirmed, and no repository button is shown for an empty URL.
+- Add future improvements only when they reflect actual plans. Add business outcomes only when they can be supported.
+
+The application case studies describe independent development work, not commercial client engagements. The business case study distinguishes visible website functionality from personal implementation ownership. The [Legacy](https://www.cubatobaccocigarco.com/legacy/) and [Shop](https://www.cubatobaccocigarco.com/shop/) pages support its business context and observable site structure; they do not establish the developer's exact responsibilities.
 
 ## Contact and education
 
@@ -131,9 +172,8 @@ Deployment guidance follows the documentation bundled with this installed Next.j
 - Verify the supplied portrait, and add the real résumé before enabling its availability flag.
 - Verify the configured email, LinkedIn, and GitHub details and test each link.
 - Configure the contact delivery variables, send a real form submission, and confirm receipt in the inbox.
-- Replace illustrative previews with real screenshots and update their placeholder flags.
-- Finish all three case studies, including verified challenges, future plans, live URLs, and repository URLs where appropriate.
-- Replace the professional WordPress project placeholder with a real, shareable project.
+- Review the nine supplied project images, their captions, and their alt text; add optional screenshots only when available.
+- Resolve the remaining project-data TODOs, including the business website's role/year and verified repository URLs where appropriate.
 - Confirm that all claims and listed features match the actual work; add education only when verified.
 - Review homepage and project metadata, favicon, and social share artwork; set the real `site.url` after the domain is known.
 - Run `npm run lint` and `npm run build`, then inspect `npm run start`.

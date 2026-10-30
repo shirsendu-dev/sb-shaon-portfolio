@@ -11,7 +11,7 @@ export default function Projects() {
             <h2 id="projects-title" className="section-title">Thoughtful builds.<br />Practical purpose.</h2>
           </div>
           <p className="section-intro">
-            Modern applications and professional website work. A closer look at the thinking, technology, and work behind each build.
+            Professional WordPress commerce and modern Next.js applications. A closer look at the decisions, interfaces, and work behind each build.
           </p>
         </div>
         <div className="projects-grid">
