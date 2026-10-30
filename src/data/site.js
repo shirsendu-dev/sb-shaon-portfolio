@@ -10,7 +10,7 @@ export const site = {
     title: "The Developer Who",
     accent: "Understands Your Business",
     description:
-      "Most full-stack developers learn business context on the job. I spent 7+ years and 300+ projects learning it first — now I build with React, Next.js, Node.js, and MongoDB.",
+      "I turn business problems into working products — WordPress websites that convert, full-stack applications that scale.",
   },
   about: {
     intro: "An established web career. An expanding perspective.",
